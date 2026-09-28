@@ -1,0 +1,9 @@
+tag,pct_of_missing,pct_of_ordinary_real,lift
+no_visible_trait,45.7,,
+partial_or_small_leaf,21.8,10.0,2.18
+overexposed,10.4,10.0,1.04
+dark,9.7,10.0,0.97
+blurry,9.7,10.0,0.97
+cluttered_background,8.0,10.0,0.8
+washed_out_colour,5.2,10.0,0.52
+low_contrast,2.1,10.0,0.21
