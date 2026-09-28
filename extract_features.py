@@ -15,6 +15,7 @@ os.makedirs(OUT_DIR, exist_ok=True)
 MODEL_NAME = "facebook/dinov2-small"
 BATCH = 32
 EXT = (".jpg", ".jpeg", ".png")
+SKIP_REAL = True   # real features are unchanged, so reuse features/real_*.npy
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
@@ -63,6 +64,7 @@ if __name__ == "__main__":
     print("Device:", device)
     processor = AutoImageProcessor.from_pretrained(MODEL_NAME)
     model = AutoModel.from_pretrained(MODEL_NAME).to(device).eval()
-    extract(REAL_DIR, "real", processor, model)
+    if not SKIP_REAL:
+        extract(REAL_DIR, "real", processor, model)
     extract(SYN_DIR, "synthetic", processor, model)
     print("Done. Saved to", OUT_DIR)

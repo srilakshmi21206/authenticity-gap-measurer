@@ -1,8 +1,6 @@
 real/
-synthetic/
-features/
+synthetic*/
+features*/
 __pycache__/
 *.pyc
 .venv/
-features_v1/
-synthetic_v1/
