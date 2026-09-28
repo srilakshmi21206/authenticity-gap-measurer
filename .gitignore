@@ -1,0 +1,6 @@
+real/
+synthetic/
+features/
+__pycache__/
+*.pyc
+.venv/
