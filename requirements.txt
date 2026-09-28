@@ -5,8 +5,8 @@ scikit-learn
 matplotlib
 pillow
 tqdm
-opencv-python
-albumentations
+opencv-python-headless
+albumentations==2.0.8
 torch
 torchvision
 transformers
