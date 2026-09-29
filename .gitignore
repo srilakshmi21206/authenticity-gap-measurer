@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .venv/
 test_upload/
+inspect2.py
+inspect_files.py
+inspect_output.txt
