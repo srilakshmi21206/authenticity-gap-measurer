@@ -1,0 +1,8 @@
+,value
+frechet_real_vs_synthetic,0.5867345328112916
+frechet_real_half_vs_half (noise floor),0.004237868233095465
+centroid_cosine_distance,0.28509360551834106
+mean_nn_distance_all_real,0.5001721194643888
+mean_nn_distance_missing_edge_cases,0.6222748712978171
+missing_vs_all_ratio,1.2441214675543741
+edge_case_gap_score,33.0
