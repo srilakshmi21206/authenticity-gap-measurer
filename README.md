@@ -72,6 +72,11 @@ tool is built to address.
 
 ## Diagnose, fix, re-measure
 
+> **Note on folder naming:** due to renaming during experimentation, the
+> saved results don't line up 1:1 with script version numbers —
+> `report_v1/` = v1 (no crop), `report_v2/` = v3 (gentle crop, scale
+> 0.6-1.0), `report_v2_aggressive/` = v2 (aggressive crop, scale 0.3-1.0).
+> See the table below for the actual scores.
 We used the tool's own diagnosis to test whether a targeted fix works. The
 hypothesis: adding `RandomResizedCrop` to the synthetic generator should
 produce more partial/zoomed-in leaf views and close the gap.
@@ -127,9 +132,14 @@ Run `python app.py` for an interactive Gradio dashboard: the overall
 Authenticity Gap Score, a per-class bar chart, a before/after crop-fix
 comparison tab, and a browsable gallery of the real edge-case images the
 synthetic data fails to cover — each captioned with its heuristic tags
-(filterable by class). It reads from `report/`, so re-run the pipeline for
-the version you want to inspect before launching, or point it at
-`report_v1/` / `report_v2/` / `report_v2_aggressive/` to compare versions.
+(filterable by class).
+
+`app.py` always reads from the `report/` folder, which holds whichever
+pipeline run was done most recently — **currently the v3 (gentle crop)
+results, score 35.5**. To view a different version, copy that version's
+folder over `report/` before launching (e.g.
+`Copy-Item report_v1\* report\ -Force` for the v1 baseline), or point a
+file-explorer script at `report_v2_aggressive/` directly.
 
 ## Reproduce
 
