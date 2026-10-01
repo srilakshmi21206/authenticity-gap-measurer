@@ -8,3 +8,8 @@ test_upload/
 inspect2.py
 inspect_files.py
 inspect_output.txt
+streamlit_app/__pycache__/
+app_gradio.py
+make_test_zips.py
+make_test_zips2.py
+make_test_zips3.py

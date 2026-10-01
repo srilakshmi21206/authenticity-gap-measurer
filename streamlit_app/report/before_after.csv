@@ -1,0 +1,9 @@
+class,edge_cases_before,uncovered_before,gap_percent_before,edge_cases_after,uncovered_after,gap_percent_after,change
+Potato___Early_blight,100,35,35.0,100,30,30.0,-5.0
+Potato___Late_blight,100,50,50.0,100,46,46.0,-4.0
+Potato___healthy,15,7,46.7,15,13,86.7,40.0
+Tomato_Bacterial_spot,212,78,36.8,212,77,36.3,-0.5
+Tomato_Early_blight,100,45,45.0,100,52,52.0,7.0
+Tomato_Late_blight,190,30,15.8,190,45,23.7,7.9
+Tomato_healthy,159,44,27.7,159,48,30.2,2.5
+OVERALL,876,289,33.0,876,311,35.5,2.5
